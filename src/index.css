@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-[#161722] text-[#f6f6f8] overflow-hidden;
+}
+
+#root {
+    @apply w-screen h-screen flex justify-center items-center;
+}
+
+.flex-middle {
+    @apply flex justify-center items-center;
+}
+
+.slider {
+    @apply w-full m-auto flex items-center mx-[12px];
+}
+
+.slider-track {
+    @apply h-[12px] bg-[#25273c] rounded-md;
+}
+
+.slider-thumb {
+    @apply cursor-pointer bg-indigo-500 outline-none w-[20px] h-[20px] rounded-full top-[-10px];
+}
+
+.slider-track.slider-track-0 {
+    @apply bg-indigo-500;
+}
